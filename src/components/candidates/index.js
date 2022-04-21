@@ -2,6 +2,7 @@ import React from 'react';
 import { useFederatedComponent } from 'ab-federation-helpers';
 
 const Candidates = () => {
+  console.log(process.env);
 
   const system = {
     module: './candidates',
