@@ -32,7 +32,7 @@ const App = () => {
 
     console.log('App.js: useEffect');
 
-    await shield.init('pRntLlwaYV2OuN_1Kc3Ua-6255');
+    await shield.init(process.env.CLIENT_ID);
     const isLoggedinn = await shield.verifyLogin();
     console.log('entered', isLoggedinn);
     setIsLoggedIn(isLoggedinn);
